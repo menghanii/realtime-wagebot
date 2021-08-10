@@ -1,1 +1,1 @@
-clock: python main.py
+uvicorn main:app --reload
