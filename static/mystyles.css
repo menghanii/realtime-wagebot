@@ -52,3 +52,10 @@ h1{
     font-size: 3vw;
 }
 
+.ad-comment{
+    font-family: Hahmlet;
+    font-size: 10px;
+    font-weight: bold;
+    color: palevioletred;
+}
+
