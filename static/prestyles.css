@@ -11,6 +11,7 @@
         grid-template-areas:
             ". intro ."
             ". survey ."
+            ". footer ."
     }
  }
  
@@ -45,6 +46,11 @@
     padding: 1vh 2vw;
     border: 5px solid palevioletred;
 }
+
+.footer{
+    grid-area: footer;
+    font-size: 0.5vw;
+}  
 
 .type-in{
     margin: 1vh 0;
