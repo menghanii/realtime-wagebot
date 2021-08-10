@@ -29,7 +29,7 @@ function getWage(){
         }
         };
 
-    xhttp.open("GET", `http://127.0.0.1:8000/mywage?wage=${params['wage']}&the_day=${params['the_day']}&the_time=${params['the_time']}&start=${params['start']}&end=${params['end']}`, true);
+    xhttp.open("GET", `https://realtime-wagebot.herokuapp.com/mywage?wage=${params['wage']}&the_day=${params['the_day']}&the_time=${params['the_time']}&start=${params['start']}&end=${params['end']}`, true);
     xhttp.send();
 }
 
