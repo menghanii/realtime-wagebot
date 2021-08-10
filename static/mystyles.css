@@ -42,12 +42,13 @@ h1{
 }
 
 .mywage{
-    font-family: Hamhlet;
+    font-family: Hahmlet;
     color: black;
     text-shadow: 0.2vw 0.2vw 0.2vw gray;
 }
 
 .now{
-    font-size: 5vw;
+    font-family: Hahmlet;
+    font-size: 3vw;
 }
 
