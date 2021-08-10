@@ -15,7 +15,7 @@ h1{
         "kakao_adfit1 kakao_adfit1 kakao_adfit1"
         ". . ."
         ". wage ."
-        ". . ."
+        "share share share"
         "kakao_adfit2 kakao_adfit2 kakao_adfit2"
 }
 
@@ -34,6 +34,10 @@ h1{
 .kakao_adfit2{
     grid-area: kakao_adfit2;
     
+}
+
+.share{
+    grid-area: share;
 }
 
 #won{
@@ -58,4 +62,6 @@ h1{
     font-weight: bold;
     color: palevioletred;
 }
+
+
 
