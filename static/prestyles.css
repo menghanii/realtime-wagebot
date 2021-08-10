@@ -31,6 +31,7 @@
         grid-template-areas:
             ". intro ."
             ". survey ."
+            ". footer ."
     }
  }
  
@@ -50,6 +51,7 @@
 .footer{
     grid-area: footer;
     font-size: 0.5vw;
+    text-align: right;
 }  
 
 .type-in{
