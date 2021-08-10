@@ -12,9 +12,11 @@ h1{
     justify-content: center;
     min-height: 100vh;
     grid-template-areas:
+        ". kakao_adfit1 ."
         ". . ."
         ". wage ."
-        ". kakao_adfit ."
+        ". . ."
+        ". kakao_adfit2 ."
 }
 
 #wage{
@@ -24,8 +26,13 @@ h1{
     padding: 1vh 2vw;
 }
 
-.kakao_adfit{
-    grid-area: kakao_adfit;
+.kakao_adfit1{
+    grid-area: kakao_adfit1;
+    
+}
+
+.kakao_adfit2{
+    grid-area: kakao_adfit2;
     
 }
 
