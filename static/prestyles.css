@@ -50,8 +50,9 @@
 
 .footer{
     grid-area: footer;
-    font-size: 0.5vw;
-    text-align: right;
+    padding: 5px 0;
+    font-size: 10px;
+    text-align: center;
 }  
 
 .type-in{
