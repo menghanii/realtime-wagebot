@@ -14,7 +14,7 @@ h1{
     grid-template-areas:
         ". . ."
         ". wage ."
-        ". . ."
+        ". kakao_adfit ."
 }
 
 #wage{
@@ -24,6 +24,11 @@ h1{
     padding: 1vh 2vw;
 }
 
+.kakao_adfit{
+    grid-area: kakao_adfit;
+    
+}
+
 .mywage{
     text-shadow: 0.2vw 0.2vw 0.2vw gray;
 }
@@ -31,3 +36,4 @@ h1{
 .now{
     font-size: 5vw;
 }
+

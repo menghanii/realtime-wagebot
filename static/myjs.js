@@ -8,7 +8,6 @@ function get_query(){
 
 var params = get_query()
 
-
 function getWage(){
     let xhttp = new XMLHttpRequest();
     
@@ -36,5 +35,6 @@ function getWage(){
 function init(){
     setInterval(getWage, 1000);
 }
+
 
 init();
