@@ -1,0 +1,27 @@
+.container{
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-areas:
+        ". survey ."
+}
+
+.survey{
+    grid-area: survey;
+    padding: 1vh 2vw;
+    border: 5px solid palevioletred;
+}
+
+.type-in{
+    margin: 1vh 0;
+    text-align: right;
+}
+
+.submit{
+    padding: 1vh 0;
+    text-align: center;
+}

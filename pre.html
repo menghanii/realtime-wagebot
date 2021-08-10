@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link href="{{ url_for('static', path='/prestyles.css?ver=1') }}" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="survey">
+            <div style="text-align: center;">
+                <h1>실시간 월급봇</h1>
+            </div>
+            <form action="mywage">
+                <div class="type-in">
+                    <p style="text-align: left; font-size: 0.8rem; font-weight: bold;">Q1. 월급 실 수령액이 얼마인가요?</p>
+                    <input type="text" name="wage" placeholder="월급 실수령액">원
+                </div>
+                <div class="type-in">
+                    <p style="text-align: left; font-size: 0.8rem; font-weight: bold;">Q2. 월급 수령일은 언제에요?(10일, 25일 등)</p>
+                    <input type="text" name="the_day" placeholder="월급수령일(ex. 10, 25)">일
+                </div>
+                <div class="type-in">
+                    <p style="text-align: left; font-size: 0.8rem; font-weight: bold;">Q3. 근무 시작시간은 몇 시인가요?</p>
+                    <input type="text" name="start" placeholder="근무 시작 시간(ex. 9)">시
+                </div>
+                <div class="type-in">
+                    <p style="text-align: left; font-size: 0.8rem; font-weight: bold;">Q4. 퇴근 시간은 몇 시인가요?</p>
+                    <input type="text" name="end" placeholder="퇴근 시간(ex. 18)">시
+                </div>
+                <div class="submit">
+                    <input type="submit" value="어디보자.." id="searchbtn">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

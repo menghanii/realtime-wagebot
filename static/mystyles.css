@@ -1,0 +1,33 @@
+h1{
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 0.1fr 1fr 0.1fr;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+    min-height: 100vh;
+    grid-template-areas:
+        ". . ."
+        ". wage ."
+        ". . ."
+}
+
+#wage{
+    grid-area: wage;
+    position: relative;
+    text-align: center;
+    padding: 1vh 2vw;
+}
+
+.mywage{
+    text-shadow: 0.2vw 0.2vw 0.2vw gray;
+}
+
+.now{
+    font-size: 5vw;
+}
