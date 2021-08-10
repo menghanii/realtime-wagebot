@@ -36,7 +36,14 @@ h1{
     
 }
 
+#won{
+    font-family: Gothic A1;
+    font-size: 0.8em;
+}
+
 .mywage{
+    font-family: Hamhlet;
+    color: black;
     text-shadow: 0.2vw 0.2vw 0.2vw gray;
 }
 

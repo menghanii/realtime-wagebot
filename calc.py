@@ -42,7 +42,7 @@ def calculate(wage, the_day, start, end):
             # paid_time = datetime.strptime(f'{now.year}/{now.month}/{now.day}/{end}', '%Y/%m/%d/%H')
             # until_now = (now - paid_time).total_seconds()
             percentage = 1
-            my_wage = format(int(percentage * wage), ',')+'원'
+            my_wage = format(int(percentage * wage), ',')
 
         elif now.weekday() != 6: # 토요일 넘어가는 새벽까지 일할 수 있으므로
             until_now = 0
@@ -51,12 +51,12 @@ def calculate(wage, the_day, start, end):
             elif now.hour < end:
                 until_now = (np.busday_count(a, datetime.strftime(now, '%Y-%m-%d'), weekmask=[1,1,1,1,1,1,0])-1) * total_sec_per_day + (now - work_start).total_seconds()
             percentage = until_now / total
-            my_wage = format(int(percentage * wage), ',')+'원'
+            my_wage = format(int(percentage * wage), ',')
 
         else:
             until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d'))))* total_sec_per_day
             percentage = until_now / total
-            my_wage = format(int(percentage * wage), ',')+'원'
+            my_wage = format(int(percentage * wage), ',')
 
     else:
         working_time = end-start
@@ -67,17 +67,17 @@ def calculate(wage, the_day, start, end):
             # paid_time = datetime.strptime(f'{now.year}/{now.month}/{now.day}/{end}', '%Y/%m/%d/%H')
             # until_now = (now - paid_time).total_seconds()
                 percentage = 1
-                my_wage = format(int(percentage * wage), ',')+'원'
+                my_wage = format(int(percentage * wage), ',')
 
         elif now.weekday() not in [5,6] and now.hour >= start and now.hour < end:
             until_now = (np.busday_count(a, datetime.strftime(now, '%Y-%m-%d'))) * total_sec_per_day + (now - work_start).total_seconds()
             percentage = until_now / total
-            my_wage = format(int(percentage * wage), ',')+'원'
+            my_wage = format(int(percentage * wage), ',')
 
         else:
             until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d'))))* total_sec_per_day
             percentage = until_now / total
-            my_wage = format(int(percentage * wage), ',')+'원'
+            my_wage = format(int(percentage * wage), ',')
 
     return my_wage
 
