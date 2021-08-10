@@ -2,3 +2,4 @@ aiofiles==0.5.0
 fastapi==0.67.0
 uvicorn==0.13.4
 numpy==1.19.5
+Jinja2==2.11.3
