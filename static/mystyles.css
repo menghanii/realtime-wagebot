@@ -12,11 +12,11 @@ h1{
     justify-content: center;
     min-height: 100vh;
     grid-template-areas:
-        ". kakao_adfit1 ."
+        "kakao_adfit1 kakao_adfit1 kakao_adfit1"
         ". . ."
         ". wage ."
         ". . ."
-        ". kakao_adfit2 ."
+        "kakao_adfit2 kakao_adfit2 kakao_adfit2"
 }
 
 #wage{
