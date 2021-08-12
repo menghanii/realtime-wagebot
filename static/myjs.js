@@ -25,7 +25,8 @@ function getWage(){
                 // var titleToBeChanged = document.getElementById("title_wage");
                 divToBeChanged.innerHTML = wage.innerHTML;
                 // titleToBeChanged.innerHTML = title_wage.innerHTML;
-                document.title = title_wage.value;
+                document.title = title_wage;
+                console.log(title_wage);
 
             } else {
             // handle errors
