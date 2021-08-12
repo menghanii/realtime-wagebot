@@ -18,7 +18,7 @@ function getWage(){
                 var val = xhttp.responseText;
                 var parser = new DOMParser();
                 var htmlDoc = parser.parseFromString(val,"text/html");
-                var wage = htmlDoc.getElementById("wage");\
+                var wage = htmlDoc.getElementById("wage");
                 var title_wage = htmlDoc.getElementById("real_wage").value;
                 // var title_wage = htmlDoc.getElementById("title_wage");
                 var divToBeChanged = document.getElementById("wage");
