@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Hahmlet:wght@600&family=Noto+Sans+KR:wght@500&display=swap');
     </style>
     <script src="{{ url_for('static', path='/myjs.js?ver=1') }}"></script>
-    <title> &#8361; {{ mywage }} </title>
+    <title class="wage"> &#8361; {{ mywage }} </title>
 </head>
 <body>
     <div class="container">
@@ -23,7 +23,7 @@
                };
             </script>
         </div>
-        <div id='wage'>
+        <div class="wage" id="wage">
             <p class="ad-comment">↑↑↑↑↑ 작고 소중한 월급으로 소확행하기 ↑↑↑↑↑</p>
             <br>
             <h2 class="now"> &#129302; : 삐빅- 주인님의 월급은 현재 ...</h2>
