@@ -51,6 +51,8 @@ def calculate(wage, the_day, start, end):
             elif now.hour < end:
                 work_start = datetime.strptime(f'{now.year}/{now.month}/{now.day - 1}/{start:02d}', '%Y/%m/%d/%H') # 하루 지남. 어제 일 시작했으니 now.day - 1
                 until_now = (np.busday_count(a, datetime.strftime(now, '%Y-%m-%d'), weekmask=[1,1,1,1,1,1,0])-1) * total_sec_per_day + (now - work_start).total_seconds()
+            else:
+                until_now = (np.busday_count(a, datetime.strftime(now, '%Y-%m-%d'), weekmask=[1,1,1,1,1,1,0])) * total_sec_per_day
             percentage = until_now / total
             my_wage = format(int(percentage * wage), ',')
 
