@@ -19,8 +19,11 @@ function getWage(){
                 var parser = new DOMParser();
                 var htmlDoc = parser.parseFromString(val,"text/html");
                 var wage = htmlDoc.getElementById("wage");
+                var title_wage = htmlDoc.getElementById("title_wage");
                 var divToBeChanged = document.getElementById("wage");
+                var titleToBeChanged = document.getElementById("title_wage");
                 divToBeChanged.innerHTML = wage.innerHTML;
+                titleToBeChanged.innerHTML = title_wage.innerHTML;
 
             } else {
             // handle errors
