@@ -78,7 +78,7 @@ def calculate(wage, the_day, start, end):
             my_wage = format(int(percentage * wage), ',')
 
         else:
-            until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d')))) * total_sec_per_day
+            until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d')))+1) * total_sec_per_day
             percentage = until_now / total
             my_wage = format(int(percentage * wage), ',')
 
