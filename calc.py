@@ -64,7 +64,7 @@ def calculate(wage, the_day, start, end):
     else:
         working_time = end-start
         total_sec_per_day = working_time * 3600 # 총 일하는 시간 -> 초 단위
-        total = (np.busday_count(a,b)+1) * total_sec_per_day
+        total = (np.busday_count(a,b)) * total_sec_per_day
 
         if now.day == the_day and now.hour >= end:
             # paid_time = datetime.strptime(f'{now.year}/{now.month}/{now.day}/{end}', '%Y/%m/%d/%H')
@@ -73,12 +73,12 @@ def calculate(wage, the_day, start, end):
             my_wage = format(int(percentage * wage), ',')
 
         elif now.weekday() not in [5,6] and now.hour >= start and now.hour < end:
-            until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d')))) * total_sec_per_day + (now - work_start).total_seconds()
+            until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d')))-1) * total_sec_per_day + (now - work_start).total_seconds()
             percentage = until_now / total
             my_wage = format(int(percentage * wage), ',')
 
         else:
-            until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d')))+1) * total_sec_per_day
+            until_now = ((np.busday_count(a, datetime.strftime(now, '%Y-%m-%d')))) * total_sec_per_day
             percentage = until_now / total
             my_wage = format(int(percentage * wage), ',')
 
